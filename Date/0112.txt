@@ -1,0 +1,57 @@
+API
+Application Programming Interface
+
+requests library
+Terminal : $ pip install requests
+
+git
+버전 관리 프로그램
+
+GUI
+Graphic User Interface
+
+CLI
+Command Line Interface
+
+명령어
+touch : 파일 생성
+start : 실행하기 (mac에서는 open)
+mkdir : 폴더 생성
+ls : 현재 작업 중인 디렉토리 내 
+cd (Change Directory) : 경로 변경 (디렉토리 - 디렉토리)
+clear : 터미널 지우기
+ctrl+l : 터미널 숨기기
+Tab : 자동완성
+./ : 현재 디렉토리
+../ : 상위 디렉토리
+rm : 파일 삭제
+rm -r : 폴더 삭제 (-r 옵션)
+rm -rf : 강제 옵션
+~ : 홈 디렉토리
+
+Markdown
+
+# : Heading
+
+- : List
+
+1. : 순서가 있는 List
+
+- `git init`
+	- 깃 레포 만들기
+- `git add {파일 이름}`
+	- staging area에 추가
+- `git commit -m '{message}'`
+	- 커밋(기록) 남기기
+- `git status`
+	- 상태 확인
+- `git log`
+	- 커밋 확인
+	- `git log --oneline`
+- `git remote add origin {url}`
+	- 원격 연결
+- `git push origin master
+	- 업로드
+	- `git push -u origin master
+- `git config --global user.name {name}
+- `git config --global user.email {email}
