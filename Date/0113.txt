@@ -1,0 +1,16 @@
+복습
+
+- add \- commit \- push (기본적인 흐름)
+
+Clone
+
+- git clone 'url'
+
+- git Folder 가져오기 (github to local) (연동)
+
+Pull
+
+- git pull origin master
+
+- 반대로 서버에서 Local로 Commit 가져오기
+
