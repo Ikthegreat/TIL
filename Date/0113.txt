@@ -14,3 +14,6 @@ Pull
 
 - 반대로 서버에서 Local로 Commit 가져오기
 
+touch .gitignore
+
+- Ignore Option 추가 (git으로 관리하지 않는 File)
