@@ -24,3 +24,6 @@ touch .gitignore
 
 git log --oneline --graph
 
+git reset (--hard) (log난수)
+
+- 해당 시점으로 reset (Skeleton Code) 시점 이동 가능
