@@ -1,0 +1,74 @@
+enumerate 순회
+
+변수 = [리스트]
+enumerate(변수)
+print(list(enumerate(변수))) --> [(0, 리스트[0]), (1, 리스트[1]), ...)
+print(list(enumerate(변수, start = 해당 값부터 순차 증가))) --> [(0, 리스트[0]), (1, 리스트[1]), ...)
+
+List Comprehension
+
+표현식과 제어문을 통해 특정한 값을 가진 리스트를 간결하게 생성하는 방법
+
+[code for 변수 in iterable]
+
+예시
+
+```
+number = int(input())
+
+lst = [number + 1 for number in range(10)]
+
+print(lst)
+
+```
+
+[code for 변수 in iterable if 조건식]
+
+Dict Comprehension
+
+표현식과 제어문을 통해 특정한 값을 가진 딕셔너리를 간결하게 생성하는 방법
+
+{key : value for 변수 in iterable}
+
+{key : value for 변수 in iterable if 조건식}
+
+break : 반복문을 종료
+
+continue : 이후의 코드 블록은 수행하지 않고, 다음 반복을 수행
+- for num in range(10):
+    if num == 5:
+        continue
+    print(num)
+에서 5 제외하고 0 ~ 9 출력
+
+for-else : 끝까지 반복문을 실행한 이후에 else 문 실행
+             - break를 통해 중간에 종료되는 경우 else 문은 실행되지 않음
+
+pass : 아무 것도 하지 않음 (문법적으로 필요하나, 할 일이 없을 때 사용)
+
+꿀팁
+
+while True:
+
+    if 특정 조건:
+        break
+
+로 조건 걸기
+
+문자열 정렬
+```
+sorted()
+```
+
+내림차순으로 정렬
+```
+sorted( , reverse = True)
+
+Counter 모듈
+```
+from collections import Counter
+```
+리스트 --> 각 원소가 몇 번씩 나오는지 딕셔너리로 표현
+
+- set은 리스트 내 중복 허용 X
+
