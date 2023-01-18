@@ -1,0 +1,56 @@
+함수 Function
+- 특정한 기능을 하는 코드의 조각 (묶음)
+- 특정 코드를 매번 다시 작성하지 않고, 필요시에만 호출하여 간편히 사용
+
+Define & Call --> Input (Parameters) --> Docstring, Function Body --> Output (Return)
+
+함수 선언은 def
+
+들여쓰기를 통해 Function body
+
+- Docstring은 함수 Body 앞에 선택적으로 작성 가능 (작성 시에는 반드시 첫 문장에 문자열 """)
+
+- 함수는 Parameter를 넘겨줄 수 있음
+
+- 동작 이후 return을 통해 결과값 출력 가능
+
+```
+def function_name(parameter)
+    # code block
+    return returning_value
+```
+
+호출 : function( )
+
+print 함수는 화면에 보여지는 역할 (호출될 때마다 값이 출력됨)
+
+return 함수는 데이터 처리를 위해 사용
+
+예시
+```
+def void_product(x, y):
+    print(f'{x} x {y} = {x * y}')
+
+void_product(4, 5) # 4 X 5 = 20
+ans = void_product(4, 5) # 4 X 5 = 20
+print(ans) # None
+
+```
+
+2개 이상의 return을 받으려면 return ans1, ans2 방식을 활용하면 tuple 형식으로 값을 반환
+
+Parameter : 함수를 정의할 때, 함수 내부에서 사용되는 변수
+
+Argument : 함수를 호출할 때, 넣어주는 값
+
+변수 수명 주기
+
+Built - in scope : 파이썬이 실행된 이후부터 영원히 유지
+Global scope : 모듈이 호출된 시점 이후 혹은 인터프리터가 끝날 때까지 유지
+Local scope : 함수가 호출될 때 생성되고, 함수가 종료될 때까지 유지
+
+LEGB Rule
+- Local scope : 지역 범위 (현재 작업 중인 범위)
+- Enclosed scope : 지역 범위 한 단계 위 범위
+- Global scope : 최상단에 위치한 범위
+- Built-in scope : 모든 것을 담고 있는 범위 (정의하지 않고 사용할 수 있는 모든 것) - ex)print( )
