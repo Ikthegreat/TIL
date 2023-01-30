@@ -8,6 +8,4 @@ for i in range(1, N+1):
     else:
         continue
 
-# output = map(int(lst))
-
 print(*lst)

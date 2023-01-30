@@ -1,0 +1,22 @@
+## 복사 방법
+
+### 할당 (Assignment)
+- 대입 연산자 (=)
+
+### 얕은 복사 (Shallow Copy)
+- Slice 연산자 활용하여 같은 원소를 가진 리스트지만 연산된 결과를 복사 (다른 주소)
+
+### 깊은 복사 (deep copy)
+```
+import copy
+
+copy.deepcopy( )
+```
+
+list에 in을 쓰면 list 내부 전체를 다 뒤진다.
+
+set에 in을 쓰면 1개라도 존재할 시 끝.
+
+
+
+
