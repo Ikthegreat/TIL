@@ -13,5 +13,3 @@ for i in range(10):
     flatten_level = sorted_level[-1] - sorted_level[0]
 
     print(f'#{i+1} {flatten_level}')
-        
-
