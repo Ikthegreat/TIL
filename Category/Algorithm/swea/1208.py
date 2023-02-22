@@ -1,4 +1,4 @@
-for i in range(10):
+for t in range(10):
 
     N = int(input())
     Box_level = list(map(int, input().split()))
@@ -9,7 +9,9 @@ for i in range(10):
         sorted_level[-1] -= 1
         sorted_level[0] += 1
         sorted_level = sorted(sorted_level)
+        if sorted_level[-1] - sorted_level[0] == 0:
+            break
 
     flatten_level = sorted_level[-1] - sorted_level[0]
 
-    print(f'#{i+1} {flatten_level}')
+    print(f'#{t+1} {flatten_level}')
