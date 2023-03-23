@@ -1,0 +1,103 @@
+.box {
+  width: 440px;
+  height: 60px;
+  background-color: #e93310;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.title {
+  width: 440px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 37px;
+  font-weight: bold;
+  border-bottom: 1px solid #c8c9ca;
+}
+
+.sign-in {
+  margin-top: 15px;
+  width: 455px;
+  height: 357px;
+  display: flexbox;
+  border: 1px solid #c8c9ca;
+  border-radius: 5px;
+}
+
+.top {
+  width: 455px;
+  height: 50px;
+  line-height: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.set {
+  margin-left: 20px;
+  width: 415px;
+}
+
+.sign-in hr {
+  border: 1px solid #0d6efd;
+}
+
+.Name {
+  height: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.Name-input input {
+  width: 410px;
+  height: 33px;
+  border: 1px solid #c8c9ca;
+  border-radius: 5px;
+}
+
+.Password {
+  height: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.Password-input input {
+  width: 410px;
+  height: 33px;
+  border: 1px solid #c8c9ca;
+  border-radius: 5px;
+}
+
+.Remember {
+  width: 420px;
+  margin-left: 15px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Remember div input {
+  width: 15px;
+  height: 15px;
+}
+
+.Remember a {
+  text-decoration-line: none;
+  color: #0d85fe;
+}
+
+.foot {
+  height: 40px;
+  background-color: #198754;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  line-height: 40px;
+}
