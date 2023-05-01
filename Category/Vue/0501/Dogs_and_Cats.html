@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="dogButton" v-on:click="getDogpicture">{{ TXT }}</button>
+  <button id="catButton" v-on:click="getCatpicture">{{ TXT }}</button>
+  <img src="" alt="" id="imgTag" width="500">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    const body = document.querySelector('body')
+    const imgTag = document.querySelector('#imgTag')
+    let flag = 0
+
+    const dogButton = new Vue({
+      el: '#dogButton',
+      data: {
+        TXT: 'Show Me a Dog',
+      },
+      methods: {
+        getDogpicture: function(event) {
+          if (flag === 1) {
+            event.preventDefault()
+            alert('이미 강아지 떠있잖아요!')
+          }
+          else {
+            fetch('https://dog.ceo/api/breeds/image/random')
+              .then(response => response.json()) // JSON 데이터 추출
+              .then(data => {
+                console.log(data)
+                const imageUrl = data.message // 이미지 URL 추출
+                imgTag.src = imageUrl // 이미지 엘리먼트의 URL 설정
+              })
+              .then(flag = 1)
+              .catch(error => console.error(error))
+          }
+        }
+      }
+    })
+
+    const catButton = new Vue({
+      el: '#catButton',
+      data: {
+        TXT: 'Show Me a Cat',
+      },
+      methods: {
+        getCatpicture: function(event) {
+          if (flag === 2) {
+            event.preventDefault()
+            alert('이미 고양이 떠있잖아요!')
+          }
+          else {
+          fetch('https://api.thecatapi.com/v1/images/search')
+            .then(response => response.json()) // JSON 데이터 추출
+            .then(data => {
+              console.log(data)
+              const imageUrl = data[0].url // 이미지 URL 추출
+              imgTag.src = imageUrl // 이미지 엘리먼트의 URL 설정
+            })
+            .then(flag = 2)
+            .catch(error => console.error(error))
+          }
+        } 
+      }
+    })
+    
+  </script>
+</body>
+</html>
